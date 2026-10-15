@@ -2,6 +2,7 @@ name: Publish Docker image to GitHub Package Registry
 on: push
 jobs:
   build:
+    timeout-minutes: 90
     runs-on: ubuntu-latest
     if: github.ref == 'refs/heads/master' # Only on master
 
